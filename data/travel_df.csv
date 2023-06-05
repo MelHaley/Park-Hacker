@@ -1,0 +1,360 @@
+origin,destination,duration,distance
+entrance,It's Tough to Be a Bug,224,308
+entrance,Kilimanjaro Safaris,1070,1482
+entrance,Expedition Everest,1104,1512
+entrance,DINOSAUR,769,1041
+entrance,Na'vi River,299,409
+entrance,Flight of Passage,545,741
+It's Tough to Be a Bug,Kilimanjaro Safaris,936,1296
+It's Tough to Be a Bug,Expedition Everest,1325,1820
+It's Tough to Be a Bug,DINOSAUR,991,1349
+It's Tough to Be a Bug,Na'vi River,410,566
+It's Tough to Be a Bug,Flight of Passage,425,579
+Kilimanjaro Safaris,Expedition Everest,2073,2869
+Kilimanjaro Safaris,DINOSAUR,1838,2523
+Kilimanjaro Safaris,Na'vi River,1022,1418
+Kilimanjaro Safaris,Flight of Passage,1175,1618
+Expedition Everest,DINOSAUR,599,825
+Expedition Everest,Na'vi River,2596,3584
+Expedition Everest,Flight of Passage,1654,2253
+DINOSAUR,Na'vi River,3186,4409
+DINOSAUR,Flight of Passage,1311,1782
+Na'vi River,Flight of Passage,735,999
+entrance,Spaceship Earth,76,101
+entrance,Soarin',296,400
+Spaceship Earth,Soarin',270,368
+entrance,Slinky Dog,443,610
+entrance,Alien Saucers,423,580
+entrance,Rock Coaster,286,396
+entrance,Toy Story Mania!,321,440
+Slinky Dog,Alien Saucers,134,184
+Slinky Dog,Rock Coaster,546,757
+Slinky Dog,Toy Story Mania!,134,185
+Alien Saucers,Rock Coaster,522,726
+Alien Saucers,Toy Story Mania!,110,154
+Rock Coaster,Toy Story Mania!,427,587
+entrance,Space Mountain,536,740
+entrance,Buzz Lightyear,290,403
+entrance,Big Thunder Mtn,573,790
+entrance,Splash Mountain,512,715
+entrance,Peter Pan's Flight,421,580
+entrance,Winnie the Pooh,370,509
+entrance,Jungle Cruise,383,534
+entrance,7 Dwarfs Train,481,664
+entrance,Under the Sea,495,679
+entrance,Magic Carpets,381,527
+entrance,Pirates of Caribbean,430,593
+entrance,Princess Hall: Cinderella,397,549
+entrance,Princess Hall: Tiana,397,549
+entrance,Haunted Mansion,417,580
+entrance,Regal Carrousel,383,527
+entrance,Dumbo,481,667
+entrance,it's a small world,425,586
+entrance,Mad Tea Party,362,503
+entrance,PhilharMagic,370,511
+entrance,Barnstormer,497,691
+entrance,Astro Orbiter,307,426
+entrance,Laugh Floor,275,383
+entrance,Tom'land Speedway,381,528
+entrance,PeopleMover,358,496
+entrance,Town Sq Mickey,160,222
+Space Mountain,Buzz Lightyear,672,914
+Space Mountain,Big Thunder Mtn,1016,1383
+Space Mountain,Splash Mountain,955,1309
+Space Mountain,Peter Pan's Flight,821,1113
+Space Mountain,Winnie the Pooh,769,1041
+Space Mountain,Jungle Cruise,826,1129
+Space Mountain,7 Dwarfs Train,873,1186
+Space Mountain,Under the Sea,895,1211
+Space Mountain,Magic Carpets,825,1121
+Space Mountain,Pirates of Caribbean,873,1188
+Space Mountain,Princess Hall: Cinderella,789,1071
+Space Mountain,Princess Hall: Tiana,789,1071
+Space Mountain,Haunted Mansion,850,1159
+Space Mountain,Regal Carrousel,782,1059
+Space Mountain,Dumbo,873,1189
+Space Mountain,it's a small world,825,1118
+Space Mountain,Mad Tea Party,754,1026
+Space Mountain,PhilharMagic,770,1043
+Space Mountain,Barnstormer,889,1214
+Space Mountain,Astro Orbiter,688,937
+Space Mountain,Laugh Floor,657,894
+Space Mountain,Tom'land Speedway,762,1039
+Space Mountain,PeopleMover,739,1007
+Space Mountain,Town Sq Mickey,442,598
+Buzz Lightyear,Big Thunder Mtn,486,674
+Buzz Lightyear,Splash Mountain,425,599
+Buzz Lightyear,Peter Pan's Flight,277,380
+Buzz Lightyear,Winnie the Pooh,226,308
+Buzz Lightyear,Jungle Cruise,317,444
+Buzz Lightyear,7 Dwarfs Train,244,334
+Buzz Lightyear,Under the Sea,294,398
+Buzz Lightyear,Magic Carpets,315,437
+Buzz Lightyear,Pirates of Caribbean,364,503
+Buzz Lightyear,Princess Hall: Cinderella,193,264
+Buzz Lightyear,Princess Hall: Tiana,193,264
+Buzz Lightyear,Haunted Mansion,311,433
+Buzz Lightyear,Regal Carrousel,239,326
+Buzz Lightyear,Dumbo,244,336
+Buzz Lightyear,it's a small world,281,385
+Buzz Lightyear,Mad Tea Party,158,219
+Buzz Lightyear,PhilharMagic,226,310
+Buzz Lightyear,Barnstormer,260,361
+Buzz Lightyear,Astro Orbiter,12,16
+Buzz Lightyear,Laugh Floor,15,21
+Buzz Lightyear,Tom'land Speedway,86,118
+Buzz Lightyear,PeopleMover,45,62
+Buzz Lightyear,Town Sq Mickey,228,317
+Big Thunder Mtn,Splash Mountain,101,133
+Big Thunder Mtn,Peter Pan's Flight,372,493
+Big Thunder Mtn,Winnie the Pooh,423,564
+Big Thunder Mtn,Jungle Cruise,267,357
+Big Thunder Mtn,7 Dwarfs Train,592,795
+Big Thunder Mtn,Under the Sea,549,734
+Big Thunder Mtn,Magic Carpets,216,283
+Big Thunder Mtn,Pirates of Caribbean,216,283
+Big Thunder Mtn,Princess Hall: Cinderella,497,667
+Big Thunder Mtn,Princess Hall: Tiana,497,667
+Big Thunder Mtn,Haunted Mansion,335,446
+Big Thunder Mtn,Regal Carrousel,436,582
+Big Thunder Mtn,Dumbo,616,833
+Big Thunder Mtn,it's a small world,365,483
+Big Thunder Mtn,Mad Tea Party,499,674
+Big Thunder Mtn,PhilharMagic,421,563
+Big Thunder Mtn,Barnstormer,632,858
+Big Thunder Mtn,Astro Orbiter,515,697
+Big Thunder Mtn,Laugh Floor,484,653
+Big Thunder Mtn,Tom'land Speedway,545,737
+Big Thunder Mtn,PeopleMover,566,766
+Big Thunder Mtn,Town Sq Mickey,579,787
+Splash Mountain,Peter Pan's Flight,313,418
+Splash Mountain,Winnie the Pooh,364,489
+Splash Mountain,Jungle Cruise,208,282
+Splash Mountain,7 Dwarfs Train,532,720
+Splash Mountain,Under the Sea,490,659
+Splash Mountain,Magic Carpets,157,208
+Splash Mountain,Pirates of Caribbean,149,197
+Splash Mountain,Princess Hall: Cinderella,438,592
+Splash Mountain,Princess Hall: Tiana,438,592
+Splash Mountain,Haunted Mansion,276,371
+Splash Mountain,Regal Carrousel,377,507
+Splash Mountain,Dumbo,557,758
+Splash Mountain,it's a small world,306,408
+Splash Mountain,Mad Tea Party,440,599
+Splash Mountain,PhilharMagic,362,488
+Splash Mountain,Barnstormer,573,783
+Splash Mountain,Astro Orbiter,456,622
+Splash Mountain,Laugh Floor,425,579
+Splash Mountain,Tom'land Speedway,486,662
+Splash Mountain,PeopleMover,507,692
+Splash Mountain,Town Sq Mickey,520,712
+Peter Pan's Flight,Winnie the Pooh,84,118
+Peter Pan's Flight,Jungle Cruise,253,364
+Peter Pan's Flight,7 Dwarfs Train,220,303
+Peter Pan's Flight,Under the Sea,177,242
+Peter Pan's Flight,Magic Carpets,226,321
+Peter Pan's Flight,Pirates of Caribbean,299,423
+Peter Pan's Flight,Princess Hall: Cinderella,147,206
+Peter Pan's Flight,Princess Hall: Tiana,147,206
+Peter Pan's Flight,Haunted Mansion,79,115
+Peter Pan's Flight,Regal Carrousel,72,101
+Peter Pan's Flight,Dumbo,266,372
+Peter Pan's Flight,it's a small world,4,5
+Peter Pan's Flight,Mad Tea Party,183,257
+Peter Pan's Flight,PhilharMagic,49,70
+Peter Pan's Flight,Barnstormer,282,397
+Peter Pan's Flight,Astro Orbiter,284,403
+Peter Pan's Flight,Laugh Floor,253,359
+Peter Pan's Flight,Tom'land Speedway,247,347
+Peter Pan's Flight,PeopleMover,335,472
+Peter Pan's Flight,Town Sq Mickey,367,515
+Winnie the Pooh,Jungle Cruise,307,434
+Winnie the Pooh,7 Dwarfs Train,168,231
+Winnie the Pooh,Under the Sea,126,170
+Winnie the Pooh,Magic Carpets,267,380
+Winnie the Pooh,Pirates of Caribbean,353,493
+Winnie the Pooh,Princess Hall: Cinderella,74,103
+Winnie the Pooh,Princess Hall: Tiana,74,103
+Winnie the Pooh,Haunted Mansion,164,233
+Winnie the Pooh,Regal Carrousel,13,18
+Winnie the Pooh,Dumbo,193,269
+Winnie the Pooh,it's a small world,89,123
+Winnie the Pooh,Mad Tea Party,109,154
+Winnie the Pooh,PhilharMagic,34,48
+Winnie the Pooh,Barnstormer,209,294
+Winnie the Pooh,Astro Orbiter,233,331
+Winnie the Pooh,Laugh Floor,202,287
+Winnie the Pooh,Tom'land Speedway,174,244
+Winnie the Pooh,PeopleMover,285,400
+Winnie the Pooh,Town Sq Mickey,316,443
+Jungle Cruise,7 Dwarfs Train,473,645
+Jungle Cruise,Under the Sea,447,604
+Jungle Cruise,Magic Carpets,57,74
+Jungle Cruise,Pirates of Caribbean,71,92
+Jungle Cruise,Princess Hall: Cinderella,395,537
+Jungle Cruise,Princess Hall: Tiana,395,537
+Jungle Cruise,Haunted Mansion,235,317
+Jungle Cruise,Regal Carrousel,334,452
+Jungle Cruise,Dumbo,473,648
+Jungle Cruise,it's a small world,265,354
+Jungle Cruise,Mad Tea Party,354,485
+Jungle Cruise,PhilharMagic,322,436
+Jungle Cruise,Barnstormer,489,673
+Jungle Cruise,Astro Orbiter,339,467
+Jungle Cruise,Laugh Floor,308,424
+Jungle Cruise,Tom'land Speedway,400,548
+Jungle Cruise,PeopleMover,390,537
+Jungle Cruise,Town Sq Mickey,388,531
+7 Dwarfs Train,Under the Sea,47,61
+7 Dwarfs Train,Magic Carpets,435,610
+7 Dwarfs Train,Pirates of Caribbean,504,704
+7 Dwarfs Train,Princess Hall: Cinderella,117,164
+7 Dwarfs Train,Princess Hall: Tiana,117,164
+7 Dwarfs Train,Haunted Mansion,299,418
+7 Dwarfs Train,Regal Carrousel,155,213
+7 Dwarfs Train,Dumbo,63,90
+7 Dwarfs Train,it's a small world,224,308
+7 Dwarfs Train,Mad Tea Party,111,159
+7 Dwarfs Train,PhilharMagic,183,253
+7 Dwarfs Train,Barnstormer,69,100
+7 Dwarfs Train,Astro Orbiter,215,307
+7 Dwarfs Train,Laugh Floor,253,361
+7 Dwarfs Train,Tom'land Speedway,143,204
+7 Dwarfs Train,PeopleMover,232,329
+7 Dwarfs Train,Town Sq Mickey,419,589
+Under the Sea,Magic Carpets,387,549
+Under the Sea,Pirates of Caribbean,474,663
+Under the Sea,Princess Hall: Cinderella,141,199
+Under the Sea,Princess Hall: Tiana,141,199
+Under the Sea,Haunted Mansion,252,357
+Under the Sea,Regal Carrousel,108,152
+Under the Sea,Dumbo,108,155
+Under the Sea,it's a small world,176,247
+Under the Sea,Mad Tea Party,157,224
+Under the Sea,PhilharMagic,136,192
+Under the Sea,Barnstormer,114,165
+Under the Sea,Astro Orbiter,260,372
+Under the Sea,Laugh Floor,298,425
+Under the Sea,Tom'land Speedway,188,268
+Under the Sea,PeopleMover,277,393
+Under the Sea,Town Sq Mickey,437,613
+Magic Carpets,Pirates of Caribbean,78,107
+Magic Carpets,Princess Hall: Cinderella,353,482
+Magic Carpets,Princess Hall: Tiana,353,482
+Magic Carpets,Haunted Mansion,199,274
+Magic Carpets,Regal Carrousel,292,398
+Magic Carpets,Dumbo,464,641
+Magic Carpets,it's a small world,229,311
+Magic Carpets,Mad Tea Party,345,477
+Magic Carpets,PhilharMagic,279,381
+Magic Carpets,Barnstormer,480,665
+Magic Carpets,Astro Orbiter,330,460
+Magic Carpets,Laugh Floor,299,416
+Magic Carpets,Tom'land Speedway,391,540
+Magic Carpets,PeopleMover,382,529
+Magic Carpets,Town Sq Mickey,379,524
+Pirates of Caribbean,Princess Hall: Cinderella,432,595
+Pirates of Caribbean,Princess Hall: Tiana,432,595
+Pirates of Caribbean,Haunted Mansion,272,376
+Pirates of Caribbean,Regal Carrousel,371,511
+Pirates of Caribbean,Dumbo,510,707
+Pirates of Caribbean,it's a small world,302,413
+Pirates of Caribbean,Mad Tea Party,391,544
+Pirates of Caribbean,PhilharMagic,359,495
+Pirates of Caribbean,Barnstormer,526,732
+Pirates of Caribbean,Astro Orbiter,376,526
+Pirates of Caribbean,Laugh Floor,345,482
+Pirates of Caribbean,Tom'land Speedway,437,607
+Pirates of Caribbean,PeopleMover,427,595
+Pirates of Caribbean,Town Sq Mickey,425,590
+Princess Hall: Cinderella,Princess Hall: Tiana,0,0
+Princess Hall: Cinderella,Haunted Mansion,227,320
+Princess Hall: Cinderella,Regal Carrousel,76,105
+Princess Hall: Cinderella,Dumbo,119,166
+Princess Hall: Cinderella,it's a small world,152,211
+Princess Hall: Cinderella,Mad Tea Party,35,52
+Princess Hall: Cinderella,PhilharMagic,109,151
+Princess Hall: Cinderella,Barnstormer,135,191
+Princess Hall: Cinderella,Astro Orbiter,169,238
+Princess Hall: Cinderella,Laugh Floor,207,292
+Princess Hall: Cinderella,Tom'land Speedway,100,141
+Princess Hall: Cinderella,PeopleMover,186,260
+Princess Hall: Cinderella,Town Sq Mickey,338,473
+Princess Hall: Tiana,Haunted Mansion,227,320
+Princess Hall: Tiana,Regal Carrousel,76,105
+Princess Hall: Tiana,Dumbo,119,166
+Princess Hall: Tiana,it's a small world,152,211
+Princess Hall: Tiana,Mad Tea Party,35,52
+Princess Hall: Tiana,PhilharMagic,109,151
+Princess Hall: Tiana,Barnstormer,135,191
+Princess Hall: Tiana,Astro Orbiter,169,238
+Princess Hall: Tiana,Laugh Floor,207,292
+Princess Hall: Tiana,Tom'land Speedway,100,141
+Princess Hall: Tiana,PeopleMover,186,260
+Princess Hall: Tiana,Town Sq Mickey,338,473
+Haunted Mansion,Regal Carrousel,159,216
+Haunted Mansion,Dumbo,353,487
+Haunted Mansion,it's a small world,76,100
+Haunted Mansion,Mad Tea Party,269,372
+Haunted Mansion,PhilharMagic,136,185
+Haunted Mansion,Barnstormer,369,512
+Haunted Mansion,Astro Orbiter,328,456
+Haunted Mansion,Laugh Floor,296,412
+Haunted Mansion,Tom'land Speedway,334,462
+Haunted Mansion,PeopleMover,379,525
+Haunted Mansion,Town Sq Mickey,404,561
+Regal Carrousel,Dumbo,194,271
+Regal Carrousel,it's a small world,77,106
+Regal Carrousel,Mad Tea Party,111,157
+Regal Carrousel,PhilharMagic,36,51
+Regal Carrousel,Barnstormer,210,296
+Regal Carrousel,Astro Orbiter,246,349
+Regal Carrousel,Laugh Floor,215,305
+Regal Carrousel,Tom'land Speedway,175,246
+Regal Carrousel,PeopleMover,261,364
+Regal Carrousel,Town Sq Mickey,329,461
+Dumbo,it's a small world,273,377
+Dumbo,Mad Tea Party,114,162
+Dumbo,PhilharMagic,229,317
+Dumbo,Barnstormer,55,80
+Dumbo,Astro Orbiter,218,310
+Dumbo,Laugh Floor,256,363
+Dumbo,Tom'land Speedway,146,206
+Dumbo,PeopleMover,235,331
+Dumbo,Town Sq Mickey,422,591
+it's a small world,Mad Tea Party,186,263
+it's a small world,PhilharMagic,53,75
+it's a small world,Barnstormer,286,402
+it's a small world,Astro Orbiter,288,408
+it's a small world,Laugh Floor,257,364
+it's a small world,Tom'land Speedway,251,352
+it's a small world,PeopleMover,339,477
+it's a small world,Town Sq Mickey,371,520
+Mad Tea Party,PhilharMagic,148,202
+Mad Tea Party,Barnstormer,133,186
+Mad Tea Party,Astro Orbiter,138,193
+Mad Tea Party,Laugh Floor,176,246
+Mad Tea Party,Tom'land Speedway,68,95
+Mad Tea Party,PeopleMover,155,214
+Mad Tea Party,Town Sq Mickey,308,428
+PhilharMagic,Barnstormer,244,342
+PhilharMagic,Astro Orbiter,235,333
+PhilharMagic,Laugh Floor,204,289
+PhilharMagic,Tom'land Speedway,199,280
+PhilharMagic,PeopleMover,286,402
+PhilharMagic,Town Sq Mickey,318,445
+Barnstormer,Astro Orbiter,239,335
+Barnstormer,Laugh Floor,277,388
+Barnstormer,Tom'land Speedway,166,231
+Barnstormer,PeopleMover,256,356
+Barnstormer,Town Sq Mickey,442,616
+Astro Orbiter,Laugh Floor,31,44
+Astro Orbiter,Tom'land Speedway,67,92
+Astro Orbiter,PeopleMover,44,60
+Astro Orbiter,Town Sq Mickey,245,339
+Laugh Floor,Tom'land Speedway,105,145
+Laugh Floor,PeopleMover,82,113
+Laugh Floor,Town Sq Mickey,213,296
+Tom'land Speedway,PeopleMover,81,113
+Tom'land Speedway,Town Sq Mickey,316,441
+PeopleMover,Town Sq Mickey,293,409
