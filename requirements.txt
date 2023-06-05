@@ -16,7 +16,6 @@ Deprecated==1.2.13
 dill==0.3.6
 entrypoints==0.4
 executing==1.2.0
-Flask==2.3.2
 fonttools==4.39.3
 future==0.18.3
 gitdb==4.0.10
