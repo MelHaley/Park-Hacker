@@ -91,7 +91,7 @@ if len(ride_choices) >= 2:
    
     
 if st.button("compare"):
-    st.write(f"compared to {hour_min(compared_to)}:  {hour_min(saved)} mins saved!")
+    st.write(f"compared to {hour_min(compared_to)}=>  {hour_min(saved)} mins saved!")
         
         
         
