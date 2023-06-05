@@ -13,4 +13,4 @@ With the **ParkHacker** website, you simply enter the park you wish to visit, th
 [(view notebooks here)](https://mybinder.org/v2/gh/MelHaley/binder-framework/master/Park-Hacker)
 
 
-[![ParkHacker](try-ParkHacker.png)]([https://park-hacker.onrender.com](https://melhaley-park-hacker-ph-demo-vrbrk6.streamlit.app/)])
+[![ParkHacker](try-ParkHacker.png)][([https://park-hacker.onrender.com](https://melhaley-park-hacker-ph-demo-vrbrk6.streamlit.app/)])
