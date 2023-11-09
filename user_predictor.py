@@ -1,7 +1,6 @@
 # import libraries
 import numpy as np
 import pandas as pd
-import datetime
 import dill
 import holidays
 import bisect
@@ -17,24 +16,26 @@ parks_df = pd.read_csv('data/parks_df.csv')
 weather = pd.read_csv('data/weather-by-day.csv')
 
 # 'us-holidays' contains holidays.US(subdiv='NY')
-with open('data/us-holidays', 'rb') as f:
-    us_holidays = dill.load(f)
+us_holidays = holidays.country_holidays('US', subdiv='NY')
+
+# 'holiday_dict' contains holiday names and abbreviations
+with open('data/holiday_dict', 'rb') as f:
+    holiday_dict = dill.load(f)
 
 # 'travel_df' contains the travel duration/distance between each ride in park    
 travel_df = pd.read_csv('data/travel_df.csv')
 
 # list of hours when park is open
-hours = [11,12,13,14,15,16,17,18,19,20,21,22,23,0,9,10,1,8,7,6]
+hours = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 0, 9, 10, 1, 8, 7, 6]
 
 # list of features used in prediction
 input_columns = ['date', 'hourofday', 'epoch', 'dayofweek', 'dayofyear', 'weekofyear',
-       'monthofyear', 'year', 'season', 'holidayn', 'holiday',
-       'weather_wdwprecip', 'wdwmintemp', 'wdwmeantemp', 'wdwmaxtemp']
-
+                 'monthofyear', 'year', 'season', 'holidayn', 'holiday',
+                 'weather_wdwprecip', 'wdwmintemp', 'wdwmeantemp', 'wdwmaxtemp']
 
 
 def get_holidays(user_input):
-    '''Checks to see if date is holiday'''
+    """Checks to see if date is holiday"""
     if user_input['date'] in us_holidays:
         name = us_holidays.get(user_input['date'])
         if name in holiday_dict:
@@ -44,37 +45,37 @@ def get_holidays(user_input):
 
     
 def input_df(user_input):
-    '''Returns feature dataframe from user input'''
-    df_X = pd.DataFrame(columns=input_columns, index=sorted(hours))
+    """Returns feature dataframe from user input"""
+    df_x = pd.DataFrame(columns=input_columns, index=sorted(hours))
     day_of_year = user_input['date'].timetuple().tm_yday
     year_week_day = user_input['date'].isocalendar()
     for n in hours:
-        df_X.loc[n, 'wdwmintemp'] = weather.iloc[day_of_year]['wdwmintemp'].astype('float')
-        df_X.loc[n,'wdwmaxtemp'] = weather.iloc[day_of_year]['wdwmaxtemp'].astype('float')
-        df_X.loc[n,'wdwmeantemp'] = weather.iloc[day_of_year]['wdwmeantemp'].astype('float')
-        df_X.loc[n,'weather_wdwprecip'] = weather.iloc[day_of_year]['weather_wdwprecip'].astype('float')
-        df_X.loc[n,'holiday'] = int(user_input['date'] in us_holidays)
-        df_X.loc[n, 'dayofyear'] = day_of_year
-        df_X.loc[n, 'dayofweek'] = year_week_day[2]
-        df_X.loc[n, 'weekofyear'] = year_week_day[1]
-        df_X.loc[n, 'monthofyear'] = user_input['date'].month
-        df_X.loc[n, 'date'] = user_input['date']
-        df_X.loc[n, 'holidayn'] = get_holidays(user_input)
-        df_X.loc[n, 'hourofday'] = n
-        df_X.loc[n, 'epoch'] = int(user_input['date'].strftime('%s'))
-    return df_X.reset_index()
+        df_x.loc[n, 'wdwmintemp'] = weather.iloc[day_of_year]['wdwmintemp'].astype('float')
+        df_x.loc[n, 'wdwmaxtemp'] = weather.iloc[day_of_year]['wdwmaxtemp'].astype('float')
+        df_x.loc[n, 'wdwmeantemp'] = weather.iloc[day_of_year]['wdwmeantemp'].astype('float')
+        df_x.loc[n, 'weather_wdwprecip'] = weather.iloc[day_of_year]['weather_wdwprecip'].astype('float')
+        df_x.loc[n, 'holiday'] = int(user_input['date'] in us_holidays)
+        df_x.loc[n, 'dayofyear'] = day_of_year
+        df_x.loc[n, 'dayofweek'] = year_week_day[2]
+        df_x.loc[n, 'weekofyear'] = year_week_day[1]
+        df_x.loc[n, 'monthofyear'] = user_input['date'].month
+        df_x.loc[n, 'date'] = user_input['date']
+        df_x.loc[n, 'holidayn'] = get_holidays(user_input)
+        df_x.loc[n, 'hourofday'] = n
+        df_x.loc[n, 'epoch'] = int(user_input['date'].strftime('%s'))
+    return df_x.reset_index()
 
 
-def get_predictions(ride_list, df_X):
-    '''Returns wait time predictions from user input'''
+def get_predictions(ride_list, df_x):
+    """Returns wait time predictions from user input"""
     ride_fits = {}
     for ride in ride_list:
         fit_name = ride+'_fit'
-        with open('data/ride_fits/'+fit_name, 'rb') as f:
-            ride_fits[ride] = dill.load(f)
+        with open('data/ride_fits/'+fit_name, 'rb') as file:
+            ride_fits[ride] = dill.load(file)
     pred_df = pd.DataFrame()
     for ride in ride_list:
-        pred_df[ride] = ride_fits[ride].predict(df_X)
+        pred_df[ride] = ride_fits[ride].predict(df_x)
         ride_duration = parks_df['duration'].loc[(parks_df['ride'] == ride)].item()
         pred_df[ride] = pred_df[ride].add(ride_duration)
     pred_df['hourofday'] = sorted(hours)
@@ -82,26 +83,25 @@ def get_predictions(ride_list, df_X):
     return pred_df
 
 
-
 def get_travel_time(origin, destination):
-    '''Returns the travel duration (in mins) between pairs of rides in itinerary'''
+    """Returns the travel duration (in mins) between pairs of rides in itinerary"""
     try:
-        travel = travel_df[((travel_df['origin']==origin) & (travel_df['destination']==destination))].dropna()
+        travel = travel_df[((travel_df['origin'] == origin) & (travel_df['destination'] == destination))].dropna()
         return travel['duration'].item()/60
     except:
-        travel = travel_df[(travel_df['origin']==destination) & (travel_df['destination']==origin)].dropna()           
+        travel = travel_df[(travel_df['origin'] == destination) & (travel_df['destination'] == origin)].dropna()
         return travel['duration'].item()/60
 
 
-
-def get_itinerary(ride_choices, ride_pred, user_input):
-    '''Generates all combinations of rides and returns the shortest itinerary'''
-    start_time = (60* user_input['time'].hour) + user_input['time'].minute
+def get_itinerary(ride_pred, user_input):
+    """Generates all combinations of rides and returns the shortest itinerary"""
+    start_time = (60 * user_input['time'].hour) + user_input['time'].minute
     rides = user_input['rides']
     combos = permutations(rides, len(rides))
     options = defaultdict(list)
     day_max = []
-    minutes = [x*60 for x in ride_pred.index]
+    minutes = [x * 60 for x in ride_pred.index]
+    total_time = 0
     # get all ride combinations
     for i, combo in enumerate(combos):
         current_total = start_time
@@ -109,38 +109,40 @@ def get_itinerary(ride_choices, ride_pred, user_input):
         for j in range(len(combo)):
             ride = combo[j]
             column = parks_df['ride'].loc[(parks_df['short_name'] == ride)].item()
+            travel = 0
             if j == 0:
-                travel = get_travel_time('entrance',ride)
+                travel = get_travel_time('entrance', ride)
             elif j > 0:
-                travel = get_travel_time(combo[j-1],combo[j])
+                travel = get_travel_time(combo[j - 1], combo[j])
             current_total += travel
             current_time = bisect.bisect(minutes, current_total)
             current_wait = ride_pred[column].iloc[current_time]
             options[i].append((combo[j], current_wait, current_total))
-            current_total += current_wait 
+            current_total += current_wait
     # list of total time for each itinerary
         day_max.append(options[i][-1][1]+options[i][-1][2])
         total_time = (min(day_max) - start_time)
     return options[day_max.index((min(day_max)))], total_time 
         
 
-    
-def get_alternate(ride_choices, ride_pred, user_input):
-    '''Generates all combinations of rides and returns the shortest itinerary'''
-    start_time = (60* user_input['time'].hour) + user_input['time'].minute
+def get_alternate(ride_pred, user_input):
+    """Generates alternate itinerary based on alphabetical ride order"""
+    start_time = (60 * user_input['time'].hour) + user_input['time'].minute
     rides = user_input['rides']
-    combo=sorted(rides, reverse=True)
+    combo = sorted(rides, reverse=True)
     options = defaultdict(list)
     current_total = start_time
     minutes = [x*60 for x in ride_pred.index]
-   #get wait + ride duration + travel for each ride in alternate itinerary
+    total_time = 0
+    # get wait + ride duration + travel for each ride in alternate itinerary
     for j in range(len(combo)):
         ride = combo[j]
         column = parks_df['ride'].loc[(parks_df['short_name'] == ride)].item()
+        travel = 0
         if j == 0:
-            travel = get_travel_time('entrance',ride)
+            travel = get_travel_time('entrance', ride)
         elif j > 0:
-            travel = get_travel_time(combo[j-1],combo[j])
+            travel = get_travel_time(combo[j-1], combo[j])
         current_total += travel
         current_time = bisect.bisect(minutes, current_total)
         current_wait = ride_pred[column].iloc[current_time]
@@ -151,19 +153,15 @@ def get_alternate(ride_choices, ride_pred, user_input):
         total_time = (day_max - start_time)
     return options['alt'], total_time    
     
-    
-    
-    
-        
+
 def get_comparison(ride_choices, ride_pred, user_input):
-    start_time = (60* user_input['time'].hour) + user_input['time'].minute
+    start_time = (60 * user_input['time'].hour) + user_input['time'].minute
     rides = ride_choices.copy()
-    combo=sorted(rides, reverse=True)
+    combo = sorted(rides, reverse=True)
     options = defaultdict(list)
     options['combo'] = [[x, x] for x in list(combo)]
     numbers = [x*60 for x in ride_pred.index]
     current_time = start_time
-    current_wait = 0
     for j in range(len(ride_choices)):
         ride = options['combo'][j][0] 
         column = parks_df['ride'].loc[(parks_df['short_name'] == ride)].item()
@@ -175,5 +173,3 @@ def get_comparison(ride_choices, ride_pred, user_input):
     if len(ride_choices) >= 2:
         
         return options
-    
-
