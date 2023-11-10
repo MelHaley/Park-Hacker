@@ -8,7 +8,7 @@ certifi==2023.7.22 ; python_full_version >= "3.11"
 cffi==1.16.0 ; implementation_name == "pypy" and python_full_version >= "3.11"
 charset-normalizer==3.3.2 ; python_full_version >= "3.11"
 click==8.1.7 ; python_full_version >= "3.11"
-colorama==0.4.6 ; python_full_version == >= "3.11" and (sys_platform == "win32" or platform_system == "Windows")
+colorama==0.4.6 ; python_full_version >= "3.11" and (sys_platform == "win32" or platform_system == "Windows")
 comm==0.2.0 ; python_full_version == >= "3.11"
 contourpy==1.2.0 ; python_full_version >= "3.11"
 cycler==0.12.1 ; python_full_version >= "3.11"
